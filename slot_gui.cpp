@@ -152,7 +152,7 @@ int main() {
   textbox.setLimit(true, 7);
   textbox.setFont(font);
 
-    // Bet input textbox
+  // Bet input textbox
   sf::RectangleShape numbet(sf::Vector2f(120, 30));
   numbet.setOutlineThickness(5);
   numbet.setOutlineColor(sf::Color::White);
@@ -311,12 +311,8 @@ int main() {
               window.display();
 
               if (coins < 10) {
-                // Game over screen
-                // int tile_arr[] = {0};
-                // if (!tile_map.load("data/images/spacetile3.png",
-                //   sf::Vector2u(50, 50), tile_arr, 13, 11))
-                // return -1;
 
+                // Game over screen
                 text.setString("GAME OVER");
                 text.setCharacterSize(40);
                 text.setPosition(210, 50);
@@ -330,7 +326,6 @@ int main() {
                 window.close();
                 break;
               }
-
             }
           }
       }
